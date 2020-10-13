@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chak | Account page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon"
+      type="image/png"
+      href="images/logo/favicon.ico">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="js/scroll.js" defer></script>
+    <script src="js/menu.js" defer></script>
+    <script src="js/afterlogin.js" defer></script>
+
+</head>
+<body id="account">
+    <div class="wrapper">
+    <header>
+    <nav class="navbar navbar-expand-lg px-4 py-3 m-0 navbar-dark" id="nav">
+      <a class="navbar-brand text-uppercase h1" href="index.html">
+          <img src="images/logo/logo-nav.png" alt="logo-chak" class="logo">
+        </a>
+        <button class="menu" id="menu" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="button-content" tabindex="-1">
+                <span class="sr-only">Menu</span>
+                <span class="bar"></span>
+            </span>
+        </button>
+       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item px-3">
+            <a class="nav-link" href="index.html" id="nav-text">Home</a>
+          </li>
+          <li class="nav-item px-3">
+            <a class="nav-link" href="menu.html"  id="nav-text">Menu</a>
+          </li>
+          <li class="nav-item px-3">
+            <a class="nav-link" href="reservation.html"  id="nav-text">Reservation</a>
+          </li>
+          <li class="nav-item px-3">
+            <a class="nav-link" href="reservation.html"  id="nav-text">Location</a>
+          </li>
+           <li class="nav-item px-3">
+             <a class="nav-link" href="contact.html" id="nav-text">Contact</a>
+           </li>
+           <li class="username-login">
+            <p><span></span></p>
+           </li>
+          </ul>
+              <a type="button" class="btn btn-outline-light  ml-3 rounded-0 btn-login px-2 m-0" href="index.html" >Log out</a>
+      </div>
+    </header>
+    <main>
+      <h2>Your Account</h2>
+      <div class="account-flex">
+
+          <div class="account-list">
+              <div class="account-photo">
+                <img src="images/logo/profile.png" alt="" id="profileImg">
+              </div>
+              <dl>
+                  <dt><a href="personalaccount.html" class="account-current">My Profile</a></dt>
+                  <dt><a href="personal_orderhistory.html">Order History</a></dt>
+                  <dt><a href="personal-reservation.html">Reservation</a></dt>
+                  <dt><a href="personal-coupon.html">Coupon</a></dt>
+                </dl>
+                <a type="button" class="btn btn-secondary btn-sm rounded" style="font-size: 10px; background-color: rgb(181, 181, 181); border: none;" href="index.html" id="logOutBtn">Log out</a>
+            </div>
+            <form class="account-form">
+                <div class="form-group">
+                <dl>
+                <dt>Order History</dt>
+                </div>
+                <div class="order-group">
+                  <div class="order-item date" style="font-weight: 400;">
+                    <dd>2020/09/02</dd>
+                  </div>
+                  <div class="order-item item">
+                    <dd>Gheymeh / kabab / ...</dd>
+                  </div>
+                  <div class="order-item price">
+                    <dd>$47.70</dd>
+                  </div>
+                  <div class="order-item detaile-btn">
+                    <button type="button" class="btn btn-sm bg-secondary p-1 detaile-btn"  data-toggle="modal" data-target="#ModalDetailes">See Detaile</button>
+                  </div>
+                </div>
+                <div class="order-group">
+                  <div class="order-item date" style="font-weight: 400;">
+                    <dd>2020/08/10</dd>
+                  </div>
+                  <div class="order-item item">
+                    <dd>Gheymeh / kabab / ...</dd>
+                  </div>
+                  <div class="order-item price">
+                    <dd>$94.00</dd>
+                  </div>
+                  <div class="order-item detaile-btn">
+                    <button type="button" class="btn btn-sm bg-secondary p-1 detaile-btn"  data-toggle="modal" data-target="#ModalDetailes">See Detaile</button>
+                  </div>
+                </div>
+                <div class="order-group">
+                  <div class="order-item date" style="font-weight: 400;">
+                    <dd>2020/06/20</dd>
+                  </div>
+                  <div class="order-item item">
+                    <dd>Gheymeh / kabab / ...</dd>
+                  </div>
+                  <div class="order-item price">
+                    <dd>$27.50</dd>
+                  </div>
+                  <div class="order-item detaile-btn">
+                    <button type="button" class="btn btn-sm bg-secondary p-1 detaile-btn"  data-toggle="modal" data-target="#ModalDetailes">See Detaile</button>
+                  </div>
+                </div>
+                <div class="order-group">
+                  <div class="order-item date" style="font-weight: 400;">
+                    <dd>2020/04/16</dd>
+                  </div>
+                  <div class="order-item item">
+                    <dd>Gheymeh / kabab / ...</dd>
+                  </div>
+                  <div class="order-item price">
+                    <dd>$47.50</dd>
+                  </div>
+                  <div class="order-item detaile-btn">
+                    <button type="button" class="btn btn-sm bg-secondary p-1 detaile-btn"  data-toggle="modal" data-target="#ModalDetailes">See Detaile</button>
+                  </div>
+                </div>
+                <div class="order-group">
+                  <div class="order-item date" style="font-weight: 400;">
+                    <dd>2020/03/01</dd>
+                  </div>
+                  <div class="order-item item">
+                    <dd>Gheymeh / kabab / ...</dd>
+                  </div>
+                  <div class="order-item price">
+                    <dd>$80.00</p>
+                  </div>
+                  <div class="order-item detaile-btn">
+                    <button type="button" class="btn btn-sm bg-secondary p-1 detaile-btn"  data-toggle="modal" data-target="#ModalDetailes">See Detaile</button>
+                  </div>
+                </div>
+              </dl>
+            </form>
+          </div>
+        </main>
+            <div class="modal fade" id="ModalDetailes" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modaldetailes-label">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <h5 class="modaldetailes-label" id="modaldetailes-label">Your Order</h5>
+            </div>
+          <div class="order-modal-body">
+            <div class="modal-body">
+              <h5>2020/09/10</h5>
+              <div class="order-list">
+              <ul class="item">
+                <li>Gheymeh</li>
+                <li>Kabab</li>
+                <li>Chay</li>
+                <li>shishlik</li>
+              </ul>
+              <ul class="price">
+                <li>$15.00</li>
+                <li>$10.00</li>
+                <li>$4.00</li>
+                <li>$14.00</li>
+              </ul>
+            </div>
+              <hr>
+              <div class="order-list-total">
+                <ul class="item">
+                  <li>Sub total</li>
+                  <li>Tax</li>
+                  <li>Tips</li>
+                  <li>Collect Points</li>
+                </ul>
+                <ul class="price">
+                  <li>$43.00</li>
+                  <li>$5.00</li>
+                  <li>$4.00</li>
+                  <li>230 Points</li>
+                </ul>
+              </div>
+              <hr>
+              <div class="order-list-total">
+                <ul class="item">
+                  <li>Total</li>
+                </ul>
+                <ul class="price">
+                  <li>$47.70</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+          <button type="button" class="btn-sm btn-danger" data-dismiss="modal" style="margin: 0 auto;"> Order Again</button>
+      </div>
+    </div>
+  </div>
+</div>
+   <footer class="footer-wrapper container-fluid" style="background-color: rgb(53, 48, 45);">
+    <div class="footer-wrapper1">
+      <p style="font-size: 14px">
+        <b style="font-size: 13px; font-weight: 700;" >Location:</b></br>
+          AA street, Vancouver, BC CANADA 1A2 B3C</br>
+          <b style="font-size: 13px; font-weight: 700;">Open Hours:</b></br>
+          11:30 PM to 9 PM Tue-Sun Monday Closed</br>
+          <b style="font-size: 13px; font-weight: 700;">Contact:</b></br>
+          info@chacpersian.com</br>
+          604 000 0000
+      </p>
+    </div>
+    <div class="footer-wrapper2">
+      <div class="footer-text2">
+        <div class="footer-logo">
+          <img src="images/logo/logo-nav.png" alt="">
+        </div>
+        <div class="footer-sns">
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-facebook-square"></i>
+        </div>
+        <div class="footer-text2">
+          <p  style="font-size: 13px;">copy right &copy; 2020 Chak persian.</p>
+          <img src="" alt="">
+        </div>
+      </div>
+    </div>
+</footer>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>

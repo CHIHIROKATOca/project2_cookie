@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chak</title>
+    <link rel="icon" type="image/png" href="images/logo/favicon.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" defer></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" defer></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/menu.js" defer></script>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="js/menuadd.js" defer></script>
+    <!-- <script src="js/login.js" defer></script> -->
+</head>
+<body id="menu-order">
+    <div class="wrapper">
+        <header>
+        <nav class="navbar navbar-expand-lg px-4 py-3 m-0 navbar-dark" id="nav">
+          <a class="navbar-brand text-uppercase h1" href="index.html">
+              <img src="images/logo/logo-nav.png" alt="logo-chak" class="logo">
+            </a>
+            <button class="menu" id="menu" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="button-content" tabindex="-1">
+                    <span class="sr-only">Menu</span>
+                    <span class="bar"></span>
+                </span>
+            </button>
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                 <ul class="navbar-nav ml-auto">
+                   <li class="nav-item px-3 p-0">
+                     <a class="nav-link" href="index.html" id="nav-text">Home</a>
+                   </li>
+                   <li class="nav-item px-3 current">
+                    Menu
+                   </li>
+                   <li class="nav-item px-3 p-0">
+                     <a class="nav-link" href="reservation.html"  id="nav-text">Reservation</a>
+                   </li>
+                   <li class="nav-item px-3 p-0">
+                    <a class="nav-link" href="location.html"  id="nav-text">Location</a>
+                  </li>
+                   <li class="nav-item px-3 p-0">
+                      <a class="nav-link" href="contact.html" id="nav-text">Contact</a>
+                  </li>
+                  <li class="username-login">
+                    <p><span></span></p>
+                   </li>
+                   </ul>
+                        <button type="button" class="btn btn-outline-light  ml-3 rounded-0 btn-login" data-toggle="modal" data-target="#exampleModal">Log in</button>
+                </div>
+            </nav>
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog position-relative" role="document">
+                    <div class="circle position-absolute mx-auto"><img src="images/logo/logo-login-02.png" alt="logo" class="logo-login"></div>
+                    <div class="modal-content ">
+                        <div class="modal-header position-relative">
+                            <button type="button" class="close m-0   text-right position-absolute" data-dismiss="modal" aria-label="Close" style="width: 100%; right: 20px;">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                        </div>
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">
+                      <span class="material-icons">
+                        local_post_office</span>
+                      User Name or Email address</label>
+                                <input type="email" class="form-control mt-1" id="exampleInputEmail1"  placeholder="Enter  User name or Email">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">
+                      <span class="material-icons">
+                        vpn_key
+                        </span>
+                      Password</label>
+                                <input type="password" class="form-control mt-1" id="exampleInputPassword1" placeholder="Password">
+                            </div>
+                            <button type="submit" class="btn btn-secondary w-100 mt-3"><a href="personalaccount.html" class="text-white">Log in</a></button>
+                        </form>
+                        <div class="modal-footer text-center mx-auto">
+                            <p>Looking to <a href="#"> create an account ?</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="mt-4">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <section class="gallery-area" id="gallery">
+                <div class="container-fluid">
+                    <div class="title text-center">
+                        <h2 class="mt-2  ">Menu</h2>
+                    </div>
+                    <div class="ordercart text-right"  data-toggle="modal" data-target="#orderModal" id="orderSubmit">
+                    <p>SHOPONG CART <span class="material-icons">
+                        shopping_cart
+                        </span></p>
+                    </div>
+                    <div class="modal fade" id="orderModal" tabindex="-1" role="dialog" aria-labelledby="orderModal" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title">Shoping cart</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body-order">
+
+                                  <ul id="modal-orderlist-name">
+                                    <h1>Menu</h1>
+                                    <li></li>
+                                  </ul>
+
+                                  <ul id="modal-orderlist-price">
+                                    <h1>Price</h1>
+                                    <li></li>
+                                  </ul>
+
+                                  <div id="modal-orderlist-quantity">
+                                    <h1>Quantity</h1>
+                                    <div id="count-wrapper">
+                                    <table id="count">
+                                        <!-- <tr>
+                                            <td>
+                                                <button class="minus">－</button>
+                                                <input type="text" name="input01" value="1" readonly class="number">
+                                                <button class="plus">＋</button>
+                                            </td>
+                                        </tr> -->
+                                    </table>
+                                    </div>
+                                </div>
+
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                  <button type="button" class="btn btn-primary">Check out</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                    <br>
+                    <div class="center" id="menu">
+                        <div class="menu-wrapper">
+                            <input type="radio" name="tabs" id="tab1" checked="checked">
+                            <label for="tab1">Starter</label>
+                            <input type="radio" name="tabs" id="tab2">
+                            <label for="tab2">Main</label>
+                            <input type="radio" name="tabs" id="tab3">
+                            <label for="tab3">Dessert</label>
+                            <input type="radio" name="tabs" id="tab4">
+                            <label for="tab4">Beverage</label>
+                        <div id="tab-content1" class="tab-content">
+                                <section>
+                                    <div class="container">
+                                        <div class="row">
+                                            <!-- <div class="col-sm-6 col-lg-3 px-2 m-0 p-0">
+                                                <div class="single-food">
+                                                    <figure>
+                                                        <img src="images/Persian food photos/starter/ash reshteh.jpg" class="menuPic" alt="Gheymeh">
+                                                        <ul>
+                                                            <li><a href="#" title="Add to Favorite"><i class="fa fa-heart"></i></a></li>
+                                                            <li ><a href="#" title="Add to order" class="add-order-button"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+                                                        </ul>
+                                                    </figure>
+
+                                                    <div class="food-content">
+                                                        <span class="category">Starter</span>
+                                                        <h3><a href="#">Ashe Reshteh</a></h3>
+
+                                                        <h4 class="price">$9 <span>$9.9</span></h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-lg-3 px-2 m-0 p-0">
+                                                <div class="single-food">
+                                                    <figure>
+
+                                                        <img src="images/Persian food photos/main/ghormeh sabzi.jpg" class="menuPic" alt="ghormeh sabzi">
+
+
+                                                        <ul>
+                                                            <li><a href="#" title="Add to Favorite"><i class="fa fa-heart"></i></a></li>
+                                                            <li ><a href="#" title="Add to order" class="add-order-button"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+
+                                                        </ul>
+                                                    </figure>
+
+                                                    <div class="food-content">
+                                                        <span class="category">Starter</span>
+                                                        <h3><a href="#">Kashke bademjoon</a></h3>
+                                                        <h4 class="price">$6</h4>
+                                                    </div>
+                                                </div>
+                                            </div> -->
+
+                                            <div class="col-sm-6 col-lg-3 px-2 m-0 p-0">
+                                                <div class="single-food">
+                                                    <figure>
+                                                        <img src="images/Persian food photos/starter/ash reshteh.jpg" class="menuPic" alt="Gheymeh">
+                                                        <ul data-id="1">
+                                                            <li><a href="#" title="Add to Favorite"><i class="fa fa-heart"></i></a></li>
+                                                            <li><a href="#" title="Add to order" class="add-order-button" ><i class="fa fa-shopping-cart" aria-hidden="true" ></i></a></li>
+                                                        </ul>
+                                                    </figure>
+                                                    <div class="food-content">
+                                                        <span class="category">Starter</span>
+                                                        <h3><a href="#">Ashe Reshteh</a></h3>
+                                                        <h4 class="price">$9 <span>$9.9</span></h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        <!-- -------------------------------------- -->
+                                            <div class="col-sm-6 col-lg-3 px-2 m-0 p-0">
+                                                <div class="single-food">
+                                                    <figure>
+                                                        <img src="images/Persian food photos/main/ghormeh sabzi.jpg" class="menuPic" alt="ghormeh sabzi">
+                                                        <ul data-id="2">
+                                                            <li><a href="#" title="Add to Favorite"><i class="fa fa-heart"></i></a></li>
+                                                            <li ><a href="#" title="Add to order" class="add-order-button "><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+                                                        </ul>
+                                                    </figure>
+                                                    <div class="food-content">
+                                                        <span class="category">Starter</span>
+                                                        <h3><a href="#">Kashke bademjoon</a></h3>
+                                                        <h4 class="price">$6</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        <!-- -------------------------------------- -->
+                                            <div class="col-sm-6 col-lg-3 px-2 m-0 p-0">
+                                                <div class="single-food">
+                                                    <figure>
+                                                        <img src="images/Persian food photos/starter/masto khiar.jpg" class="menuPic" alt="joje kabab">
+                                                        <ul data-id="3">
+                                                            <li><a href="#" title="Add to Favorite"><i class="fa fa-heart"></i></a></li>
+                                                            <li ><a href="#" title="Add to order" class="add-order-button"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+                                                        </ul>
+                                                    </figure>
+                                                    <div class="food-content">
+                                                        <span class="category">Starter</span>
+                                                        <h3><a href="#">masto khiar</a></h3>
+                                                        <h4 class="price">$6</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6 col-lg-3 px-2 m-0 p-0">
+                                                <div class="single-food">
+                                                    <figure>
+                                                        <img src="images/Persian food photos/starter/mirza ghasemi.jpg" class="menuPic" alt="kabab kobide">
+                                                        <ul data-id="4">
+                                                            <li><a href="#" title="Add to Favorite"><i class="fa fa-heart"></i></a></li>
+                                                            <li ><a href="#" title="Add to order" class="add-order-button"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+                                                        </ul>
+                                                    </figure>
+                                                    <div class="food-content">
+                                                        <span class="category">Starter</span>
+                                                        <h3><a href="#">Mirza ghasemi</a></h3>
+                                                        <h4 class="price">$7.5</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-lg-3 px-2 m-0 p-0">
+                                                <div class="single-food">
+                                                    <figure>
+                                                        <img src="images/Persian food photos/starter/salad shirazi.jpg" class="menuPic" alt="polo morgh">
+                                                        <ul data-id="5">
+                                                            <li><a href="#" title="Add to Favorite"><i class="fa fa-heart"></i></a></li>
+                                                            <li ><a href="#" title="Add to order" class="add-order-button"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+                                                        </ul>
+                                                    </figure>
+
+                                                    <div class="food-content">
+                                                        <span class="category">Starter</span>
+                                                        <h3><a href="#">Salad shirazi</a></h3>
+                                                        <h4 class="price">$3</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-lg-3 px-2 m-0 p-0">
+                                                <div class="single-food">
+                                                    <figure>
+                                                        <img src="images/Persian food photos/starter/tah digi.jpg" class="menuPic" alt="shishlik">
+                                                        <ul data-id="6">
+                                                            <li><a href="#" title="Add to Favorite"><i class="fa fa-heart"></i></a></li>
+                                                            <li ><a href="#" title="Add to order" class="add-order-button"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+                                                        </ul>
+                                                    </figure>
+
+                                                    <div class="food-content">
+                                                        <span class="category">Starter</span>
+                                                        <h3><a href="#">Tah digi</a></h3>
+                                                        <h4 class="price">$1.5 </h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-lg-3 px-2 m-0 p-0">
+                                                <div class="single-food">
+                                                    <figure>
+
+                                                        <img src="images/Persian food photos/starter/falafel.jpg" class="menuPic" alt="bademjon">
+
+
+                                                        <ul data-id="7">
+                                                            <li><a href="#" title="Add to Favorite"><i class="fa fa-heart"></i></a></li>
+                                                            <li ><a href="#" title="Add to order" class="add-order-button"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+
+                                                        </ul>
+                                                    </figure>
+
+                                                    <div class="food-content">
+                                                        <span class="category">Starter</span>
+                                                        <h3><a href="#">falafel</a></h3>
+                                                        <h4 class="price">$4.5 </h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-lg-3 px-2 m-0 p-0">
+                                                <div class="single-food">
+                                                    <figure>
+
+                                                        <img src="images/Persian food photos/starter/non panir sabzi.jpg" class="menuPic" alt="fesenjon">
+
+
+                                                        <ul data-id="8">
+                                                            <li><a href="#" title="Add to Favorite"><i class="fa fa-heart"></i></a></li>
+                                                            <li ><a href="#" title="Add to order" class="add-order-button"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+
+                                                        </ul>
+                                                    </figure>
+
+                                                    <div class="food-content">
+                                                        <span class="category">Starter</span>
+                                                        <h3><a href="#">Non pani sabzi</a></h3>
+                                                        <h4 class="price">$2.5 </h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </section>
+                           </div>
+                        <div id="tab-content2" class="tab-content">
+                            <section>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm-6 col-lg-3 px-2 m-0 p-0">
+                                            <div class="single-food">
+                                                <figure>
+                                                    <img src="images/Persian food photos/main/Gheymeh.jpg" class="menuPic" alt="Gheymeh">
+                                                    <ul data-id="9">
+                                                        <li><a href="#" title="Add to Favorite"><i class="fa fa-heart"></i></a></li>
+                                                        <li ><a href="#" title="Add to order" class="add-order-button"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+                                                    </ul>
+                                                </figure>
+
+                                                <div class="food-content">
+                                                    <span class="category">Starter</span>
+                                                    <h3><a href="#">Polo gheymeh</a></h3>
+
+                                                    <h4 class="price">$11 <span>$10</span></h4>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-6 col-lg-3 px-2 m-0 p-0">
+                                            <div class="single-food">
+                                                <figure>
+
+                                                    <img src="images/Persian food photos/starter/kashke bademjoon.jpg" class="menuPic" alt="ghormeh sabzi">
+
+
+                                                    <ul data-id="10">
+                                                        <li><a href="#" title="Add to Favorite"><i class="fa fa-heart"></i></a></li>
+                                                        <li ><a href="#" title="Add to order" class="add-order-button"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+
+                                                    </ul>
+                                                </figure>
+
+                                                <div class="food-content">
+                                                    <span class="category">Starter</span>
+                                                    <h3><a href="#">Polo ghormeh sabzi</a></h3>
+
+                                                    <h4 class="price">$11</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-6 col-lg-3 px-2 m-0 p-0">
+                                            <div class="single-food">
+                                                <figure>
+
+                                                    <img src="images/Persian food photos/main/joje kabab.jpg" class="menuPic" alt="joje kabab">
+
+
+                                                    <ul data-id="11">
+                                                        <li><a href="#" title="Add to Favorite"><i class="fa fa-heart"></i></a></li>
+                                                        <li ><a href="#" title="Add to order" class="add-order-button"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+
+                                                    </ul>
+                                                </figure>
+
+                                                <div class="food-content">
+                                                    <span class="category">Starter</span>
+                                                    <h3><a href="#">Joje kabab</a></h3>
+
+                                                    <h4 class="price">$13</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-6 col-lg-3 px-2 m-0 p-0">
+                                            <div class="single-food">
+                                                <figure>
+
+                                                    <img src="images/Persian food photos/main/kabab kobide.jpg" class="menuPic" alt="kabab kobide">
+
+
+                                                    <ul data-id="12">
+                                                        <li><a href="#" title="Add to Favorite"><i class="fa fa-heart"></i></a></li>
+                                                        <li ><a href="#" title="Add to order" class="add-order-button"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+
+                                                    </ul>
+                                                </figure>
+
+                                                <div class="food-content">
+                                                    <span class="category">Starter</span>
+                                                    <h3><a href="#">Cholo kabab</a></h3>
+
+                                                    <h4 class="price">$13</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-lg-3 px-2 m-0 p-0">
+                                            <div class="single-food">
+                                                <figure>
+
+                                                    <img src="images/Persian food photos/main/polo morgh.jpg" class="menuPic" alt="polo morgh">
+
+
+                                                    <ul data-id="13">
+                                                        <li><a href="#" title="Add to Favorite"><i class="fa fa-heart"></i></a></li>
+                                                        <li ><a href="#" title="Add to order" class="add-order-button"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+
+                                                    </ul>
+                                                </figure>
+
+                                                <div class="food-content">
+                                                    <span class="category">Starter</span>
+                                                    <h3><a href="#">Polo morgh</a></h3>
+
+                                                    <h4 class="price">$11.5</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-lg-3 px-2 m-0 p-0">
+                                            <div class="single-food">
+                                                <figure>
+
+                                                    <img src="images/Persian food photos/main/shishlik.jpg" class="menuPic" alt="shishlik">
+
+
+                                                    <ul data-id="14">
+                                                        <li><a href="#" title="Add to Favorite"><i class="fa fa-heart"></i></a></li>
+                                                        <li ><a href="#" title="Add to order" class="add-order-button"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+
+                                                    </ul>
+                                                </figure>
+
+                                                <div class="food-content">
+                                                    <span class="category">Starter</span>
+                                                    <h3><a href="#">shishlik</a></h3>
+
+                                                    <h4 class="price">$15 </h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-lg-3 px-2 m-0 p-0">
+                                            <div class="single-food">
+                                                <figure>
+
+                                                    <img src="images/Persian food photos/main/bademjon.jpg" class="menuPic" alt="bademjon">
+
+
+                                                    <ul data-id="15">
+                                                        <li><a href="#" title="Add to Favorite"><i class="fa fa-heart"></i></a></li>
+                                                        <li ><a href="#" title="Add to order" class="add-order-button"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+
+                                                    </ul>
+                                                </figure>
+
+                                                <div class="food-content">
+                                                    <span class="category">Starter</span>
+                                                    <h3><a href="#">Polo bademjoon</a></h3>
+
+                                                    <h4 class="price">$10.5 </h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-lg-3 px-2 m-0 p-0">
+                                            <div class="single-food">
+                                                <figure>
+
+                                                    <img src="images/Persian food photos/main/fesenjon.jpg" class="menuPic" alt="fesenjon">
+
+
+                                                    <ul data-id="16">
+                                                        <li><a href="#" title="Add to Favorite"><i class="fa fa-heart"></i></a></li>
+                                                        <li ><a href="#" title="Add to order" class="add-order-button"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+
+                                                    </ul>
+                                                </figure>
+
+                                                <div class="food-content">
+                                                    <span class="category">Starter</span>
+                                                    <h3><a href="#">fesenjon</a></h3>
+
+                                                    <h4 class="price">$11.5 </h4>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+
+
+                        <div id="tab-content3" class="tab-content">
+                            <section>
+                                <div class="container">
+
+
+                                    <div class="row">
+                                        <div class="col-sm-6 col-lg-3 px-2 m-0 p-0">
+                                            <div class="single-food">
+                                                <figure>
+
+                                                    <img src="images/Persian food photos/dessert/baghlava.jpg" class="menuPic" alt="baghlava">
+
+
+                                                    <ul data-id="17">
+                                                        <li><a href="#" title="Add to Favorite"><i class="fa fa-heart"></i></a></li>
+                                                        <li ><a href="#" title="Add to order" class="add-order-button"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+
+                                                    </ul>
+                                                </figure>
+
+                                                <div class="food-content">
+                                                    <span class="category">Dessert</span>
+                                                    <h3><a href="#">baghlava</a></h3>
+
+                                                    <h4 class="price">$8.5 <span>$7</span></h4>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-6 col-lg-3 px-2 m-0 p-0">
+                                            <div class="single-food">
+                                                <figure>
+
+                                                    <img src="images/Persian food photos/dessert/bastani akbar mashti.jpg" class="menuPic" alt="bastani akbar mashti">
+
+
+                                                    <ul data-id="18">
+                                                        <li><a href="#" title="Add to Favorite"><i class="fa fa-heart"></i></a></li>
+                                                        <li ><a href="#" title="Add to order" class="add-order-button"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+
+                                                    </ul>
+                                                </figure>
+
+                                                <div class="food-content">
+                                                    <span class="category">Dessert</span>
+                                                    <h3><a href="#">Bastani akbar mashti</a></h3>
+
+                                                    <h4 class="price">$5</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-6 col-lg-3 px-2 m-0 p-0">
+                                            <div class="single-food">
+                                                <figure>
+
+                                                    <img src="images/Persian food photos/dessert/halva.jpg" class="menuPic" alt="halva">
+
+
+                                                    <ul data-id="19">
+                                                        <li><a href="#" title="Add to Favorite"><i class="fa fa-heart"></i></a></li>
+                                                        <li ><a href="#" title="Add to order" class="add-order-button"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+
+                                                    </ul>
+                                                </figure>
+
+                                                <div class="food-content">
+                                                    <span class="category">Dessert</span>
+                                                    <h3><a href="#">Halva</a></h3>
+
+                                                    <h4 class="price">$4</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-6 col-lg-3 px-2 m-0 p-0">
+                                            <div class="single-food">
+                                                <figure>
+
+                                                    <img src="images/Persian food photos/dessert/shole zard.jpg" class="menuPic" alt="shole zard">
+
+
+                                                    <ul data-id="20">
+                                                        <li><a href="#" title="Add to Favorite"><i class="fa fa-heart"></i></a></li>
+                                                        <li ><a href="#" title="Add to order" class="add-order-button"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+
+                                                    </ul>
+                                                </figure>
+
+                                                <div class="food-content">
+                                                    <span class="category">Dessert</span>
+                                                    <h3><a href="#">Shole zard</a></h3>
+
+                                                    <h4 class="price">$5</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-lg-3 px-2 m-0 p-0">
+                                            <div class="single-food">
+                                                <figure>
+
+                                                    <img src="images/Persian food photos/dessert/sohan.jpg" class="menuPic" alt="ssohan">
+
+
+                                                    <ul data-id="21">
+                                                        <li><a href="#" title="Add to Favorite"><i class="fa fa-heart"></i></a></li>
+                                                        <li ><a href="#" title="Add to order" class="add-order-button"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+
+                                                    </ul>
+                                                </figure>
+
+                                                <div class="food-content">
+                                                    <span class="category">Dessert</span>
+                                                    <h3><a href="#">Sohan</a></h3>
+
+                                                    <h4 class="price">$3</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-lg-3 px-2 m-0 p-0">
+                                            <div class="single-food">
+                                                <figure>
+
+                                                    <img src="images/Persian food photos/dessert/tiramisu.jpg" class="menuPic" alt="tiramisu">
+
+
+                                                    <ul data-id="22">
+                                                        <li><a href="#" title="Add to Favorite"><i class="fa fa-heart"></i></a></li>
+                                                        <li ><a href="#" title="Add to order" class="add-order-button"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+
+                                                    </ul>
+                                                </figure>
+
+                                                <div class="food-content">
+                                                    <span class="category">Dessert</span>
+                                                    <h3><a href="#">Tiramisu</a></h3>
+
+                                                    <h4 class="price">$4.5 </h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-lg-3 px-2 m-0 p-0">
+                                            <div class="single-food">
+                                                <figure>
+
+                                                    <img src="images/Persian food photos/dessert/fereni.jpg" class="menuPic" alt="ferni">
+
+
+                                                    <ul data-id="23">
+                                                        <li><a href="#" title="Add to Favorite"><i class="fa fa-heart"></i></a></li>
+                                                        <li ><a href="#" title="Add to order" class="add-order-button"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+
+                                                    </ul>
+                                                </figure>
+
+                                                <div class="food-content">
+                                                    <span class="category">Dessert</span>
+                                                    <h3><a href="#">Ferni</a></h3>
+
+                                                    <h4 class="price">$1.5 </h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-lg-3 px-2 m-0 p-0">
+                                            <div class="single-food">
+                                                <figure>
+
+                                                    <img src="images/Persian food photos/dessert/koko sabzi.jpg" class="menuPic" alt="koko sabzi">
+
+
+                                                    <ul data-id="24">
+                                                        <li><a href="#" title="Add to Favorite"><i class="fa fa-heart"></i></a></li>
+                                                        <li ><a href="#" title="Add to order" class="add-order-button"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+
+                                                    </ul>
+                                                </figure>
+
+                                                <div class="food-content">
+                                                    <span class="category">Dessert</span>
+                                                    <h3><a href="#">Koko sabzi</a></h3>
+
+                                                    <h4 class="price">$1.5 </h4>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+
+
+                        <div id="tab-content4" class="tab-content">
+                            <section>
+                                <div class="container">
+
+
+                                    <div class="row">
+                                        <div class="col-sm-6 col-lg-3 px-2 m-0 p-0">
+                                            <div class="single-food">
+                                                <figure>
+
+                                                    <img src="images/Persian food photos/beverage/chay zaferoni.jpg" class="menuPic" alt="chay zaferoni">
+
+
+                                                    <ul data-id="25">
+                                                        <li><a href="#" title="Add to Favorite"><i class="fa fa-heart"></i></a></li>
+                                                        <li ><a href="#" title="Add to order" class="add-order-button"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+
+                                                    </ul>
+                                                </figure>
+
+                                                <div class="food-content">
+                                                    <span class="category">Beverage</span>
+                                                    <h3><a href="#">Chay zaferoni</a></h3>
+
+                                                    <h4 class="price">$1.5</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-6 col-lg-3 px-2 m-0 p-0">
+                                            <div class="single-food">
+                                                <figure>
+
+                                                    <img src="images/Persian food photos/beverage/chay.jpg" class="menuPic" alt="Chay">
+
+
+                                                    <ul data-id="26">
+                                                        <li><a href="#" title="Add to Favorite"><i class="fa fa-heart"></i></a></li>
+                                                        <li ><a href="#" title="Add to order" class="add-order-button"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+
+                                                    </ul>
+                                                </figure>
+
+                                                <div class="food-content">
+                                                    <span class="category">Beverage</span>
+                                                    <h3><a href="#">chay</a></h3>
+
+                                                    <h4 class="price">$1</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-6 col-lg-3 px-2 m-0 p-0">
+                                            <div class="single-food">
+                                                <figure>
+
+                                                    <img src="images/Persian food photos/beverage/dough.jpg" class="menuPic" alt="dough">
+
+
+                                                    <ul data-id="27">
+                                                        <li><a href="#" title="Add to Favorite"><i class="fa fa-heart"></i></a></li>
+                                                        <li ><a href="#" title="Add to order" class="add-order-button"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+
+                                                    </ul>
+                                                </figure>
+
+                                                <div class="food-content">
+                                                    <span class="category">Beverage</span>
+                                                    <h3><a href="#">dough</a></h3>
+
+                                                    <h4 class="price">$2.5</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-6 col-lg-3 px-2 m-0 p-0">
+                                            <div class="single-food">
+                                                <figure>
+
+                                                    <img src="images/Persian food photos/beverage/khakshir.jpg" class="menuPic" alt="kakeshir">
+
+
+                                                    <ul data-id="28">
+                                                        <li><a href="#" title="Add to Favorite"><i class="fa fa-heart"></i></a></li>
+                                                        <li ><a href="#" title="Add to order" class="add-order-button"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+
+                                                    </ul>
+                                                </figure>
+
+                                                <div class="food-content">
+                                                    <span class="category">Beverage</span>
+                                                    <h3><a href="#">Sharbat khakeshir</a></h3>
+
+                                                    <h4 class="price">$2.5</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-lg-3 px-2 m-0 p-0">
+                                            <div class="single-food">
+                                                <figure>
+
+                                                    <img src="images/Persian food photos/beverage/sharbat bidmeshk.jpg" class="menuPic" alt="sharbat bidmeshk">
+
+
+                                                    <ul data-id="29">
+                                                        <li><a href="#" title="Add to Favorite"><i class="fa fa-heart"></i></a></li>
+                                                        <li ><a href="#" title="Add to order" class="add-order-button"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+
+                                                    </ul>
+                                                </figure>
+
+                                                <div class="food-content">
+                                                    <span class="category">Beverage</span>
+                                                    <h3><a href="#">Sharbat bidmeshk</a></h3>
+
+                                                    <h4 class="price">$2</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-lg-3 px-2 m-0 p-0">
+                                            <div class="single-food">
+                                                <figure>
+
+                                                    <img src="images/Persian food photos/beverage/sharbate blimoo.jpg" class="menuPic" alt="sharbate ablimoo">
+
+
+                                                    <ul data-id="30">
+                                                        <li><a href="#" title="Add to Favorite"><i class="fa fa-heart"></i></a></li>
+                                                        <li ><a href="#" title="Add to order" class="add-order-button"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+
+                                                    </ul>
+                                                </figure>
+
+                                                <div class="food-content">
+                                                    <span class="category">Beverage</span>
+                                                    <h3><a href="#">Sharbate ablimoo</a></h3>
+
+                                                    <h4 class="price">$1.5 </h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-lg-3 px-2 m-0 p-0">
+                                            <div class="single-food">
+                                                <figure>
+
+                                                    <img src="images/Persian food photos/beverage/ab.jpg" class="menuPic" alt="sharbate ablimoo">
+
+
+                                                    <ul data-id="31">
+                                                        <li><a href="#" title="Add to Favorite"><i class="fa fa-heart"></i></a></li>
+                                                        <li ><a href="#" title="Add to order" class="add-order-button"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+
+                                                    </ul>
+                                                </figure>
+
+                                                <div class="food-content">
+                                                    <span class="category">Beverage</span>
+                                                    <h3><a href="#">Ab</a></h3>
+
+                                                    <h4 class="price">$1 </h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class=" col-sm-6 col-lg-3 px-2 m-0">
+                                            <div class="single-food">
+                                                <figure>
+
+                                                    <img src="images/Persian food photos/beverage/ab anar.jpg" class="menuPic" alt="sharbate ablimoo">
+
+
+                                                    <ul data-id="32">
+                                                        <li><a href="#" title="Add to Favorite"><i class="fa fa-heart"></i></a></li>
+                                                        <li ><a href="#" title="Add to order" class="add-order-button"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+
+                                                    </ul>
+                                                </figure>
+
+                                                <div class="food-content">
+                                                    <span class="category">Beverage</span>
+                                                    <h3><a href="#">Ab anar</a></h3>
+
+                                                    <h4 class="price">$4.5 </h4>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+    </div>
+    </div>
+    </section>
+    </main>
+    <footer class="footer-wrapper container-fluid" style="background-color: rgb(53, 48, 45);">
+        <div class="footer-wrapper1">
+            <p style="font-size: 14px">
+                <b style="font-size: 13px; font-weight: 700;">Location:</b></br>
+                AA street, Vancouver, BC CANADA 1A2 B3C</br>
+                <b style="font-size: 13px; font-weight: 700;">Open Hours:</b></br>
+                11:30 PM to 9 PM Tue-Sun Monday Closed</br>
+                <b style="font-size: 13px; font-weight: 700;">Contact:</b></br>
+                info@chacpersian.com</br>
+                604 000 0000
+            </p>
+        </div>
+        <div class="footer-wrapper2">
+            <div class="footer-text2">
+                <div class="footer-logo">
+                    <img src="images/logo/logo-nav.png" alt="">
+                </div>
+                <div class="footer-sns">
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-facebook-square"></i>
+                </div>
+                <div class="footer-text2">
+                    <p style="font-size: 13px;">copy right &copy; 2020 Chak persian.</p>
+                    <img src="" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script>
+$(function(){
+	var number,total_number;
+	var max = 10; //合計最大数
+	var $input = $('#count .number'); //カウントする箇所
+	var $plus = $('#count .plus'); //アップボタン
+	var $minus = $('#count .minus'); //ダウンボタン
+	//合計カウント用関数
+	function total() {
+		total_number = 0;
+		$input.each(function(val) {
+			val = Number($(this).val());
+			total_number += val;
+		});
+		return total_number;
+	}
+	//ロード時
+	$(window).on('load', function() {
+		$input.each(function() {
+			number = Number($(this).val());
+			if (number == max) {
+				$(this).next($plus).prop("disabled", true);
+			} else if (number == 0) {
+				$(this).prev($minus).prop("disabled", true);
+			}
+		});
+		total();
+		if (total_number == max) {
+			$plus.prop("disabled", true);
+		} else {
+			$plus.prop("disabled", false);
+		}
+	});
+	//ダウンボタンクリック時
+
+    $(document).on('click','#count .minus', function() {
+		total();
+		number = Number($(this).next($input).val());
+		if (number > 0) {
+			$(this).next($input).val(number - 1);
+			if ((number - 1) == 0) {
+			$(this).prop("disabled", true);
+			}
+			$(this).next().next($plus).prop("disabled", false);
+		} else {
+			$(this).prop("disabled", true);
+		}
+		total();
+		if (total_number < max) {
+			$plus.prop("disabled", false);
+		}
+	});
+	//アップボタンクリック時
+	$(document).on('click','#count .plus', function() {
+		number = Number($(this).prev($input).val());
+		if (number < max) {
+			$(this).prev($input).val(number + 1);
+			if ((number + 1) == max) {
+			$(this).prop("disabled", true);
+			}
+			$(this).prev().prev($minus).prop("disabled", false);
+		} else {
+			$(this).prop("disabled", true);
+		}
+		total();
+		if (total_number == max) {
+			$plus.prop("disabled", true);
+		} else {
+			$plus.prop("disabled", false);
+		}
+	});
+});
+</script>
+
+</body>
+
+</html>

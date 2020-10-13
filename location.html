@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chak | Location</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon"
+      type="image/png"
+      href="images/logo/favicon.ico">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="js/scroll.js" defer></script>
+    <script src="js/menu.js" defer></script>
+    <script src="js/afterlogin.js" defer></script>
+
+
+</head>
+<body id="location">
+  <div class="wrapper">
+  <header>
+  <nav class="navbar navbar-expand-lg px-4 py-3 m-0 navbar-dark" id="nav">
+    <a class="navbar-brand text-uppercase h1" href="index.html">
+        <img src="images/logo/logo-nav.png" alt="logo-chak" class="logo">
+      </a>
+      <button class="menu" id="menu" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="button-content" tabindex="-1">
+              <span class="sr-only">Menu</span>
+              <span class="bar"></span>
+          </span>
+      </button>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+           <ul class="navbar-nav ml-auto">
+             <li class="nav-item px-3 p-0">
+               <a class="nav-link" href="index.html" id="nav-text">Home</a>
+             </li>
+             <li class="nav-item px-3 p-0">
+               <a class="nav-link" href="menu.html"  id="nav-text">Menu</a>
+             </li>
+             <li class="nav-item px-3 p-0">
+               <a class="nav-link" href="reservation.html"  id="nav-text">Reservation</a>
+             </li>
+             <li class="nav-item px-3 current">
+              Location
+             </li>
+             <li class="nav-item px-3 p-0">
+                <a class="nav-link" href="contact.html" id="nav-text">Contact</a>
+            </li>
+            <li class="username-login">
+              <p><span></span></p>
+             </li>
+             </ul>
+            <button type="button" class="btn btn-outline-light ml-3 rounded-0 btn-login" data-toggle="modal" data-target="#exampleModal">Log in</button>
+            </div>
+          </nav>
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog position-relative" role="document">
+              <div class="circle position-absolute mx-auto"><img src="images/logo/logo-login-02.png" alt="logo" class="logo-login"></div>
+              <div class="modal-content ">
+              <div class="modal-header position-relative">
+                  <button type="button" class="close m-0 p-0 text-right position-absolute" data-dismiss="modal" aria-label="Close" style="width: 100%; right: 20px;">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <form>
+            <div class="form-group">
+              <label for="usernameLogin">
+                <span class="material-icons">
+                  local_post_office</span>
+                User Name</label>
+              <input type="name" class="form-control mt-1" id="usernameLogin"
+                placeholder="Enter  User name or Email">
+            </div>
+            <div class="form-group">
+              <label for="passwordLogin">
+                <span class="material-icons">
+                  vpn_key
+                </span>
+                Password</label>
+              <input type="password" class="form-control mt-1" id="passwordLogin" placeholder="Password"  autocomplete="off">
+            </div>
+            <input type="button" class="btn btn-secondary w-100 mt-3" id="submitLogin" onclick="location.href='personalaccount.html'"value="Log in">
+          </form>
+                <div class="modal-footer text-center mx-auto">
+                <p>Looking to <a href="#"> create an account ?</a></p>
+                </div>
+          </div>
+      </div>
+    </div>
+  </header>
+    <main>
+        <h2>Location</h2>
+        <div class="location-flex">
+            <section class="store-location">
+                <h4>Chak<span>Vancouver</span></h4>
+                <dl>
+                    <dt>Address</dt>
+                    <dd>AA street, Vancouver, BC CANADA 1A2 B3C</dd>
+                    <dt>Phone</dt>
+                    <dd>604 000 0000</dd>
+                    <dt>Open Hours</dt>
+                    <dd>11:30 AM to 9 PM Tue-Sun<br>Monday Closed</dd>
+                </dl>
+                <div class="gmap">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5206.104080980636!2d-123.12487500280544!3d49.275411116677496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548673d10d99f885%3A0x456d9c34bf28293f!2sYaletown%2C%20Vancouver%2C%20BC!5e0!3m2!1sen!2sca!4v1600343105029!5m2!1sen!2sca" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </section>
+            <section class="store-location">
+                <h4>Chak<span>Tokyo</span></h4>
+                <dl>
+                    <dt>Address</dt>
+                    <dd>1234 AAA-Cho, BBB-Ku Tokyo, JAPAN 000-0000</dd>
+                    <dt>Phone</dt>
+                    <dd>0120 000 000</dd>
+                    <dt>Open Hours</dt>
+                    <dd>11 AM to 10 PM Tue-Sun<br>Monday Closed</dd>
+                </dl>
+                <div class="gmap">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12966.288733861657!2d139.7248742691552!3d35.66291071522909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b9d3c1c9187%3A0x48f9c248e9169cfe!2sRoppongi%2C%20Minato%20City%2C%20Tokyo%20106-0032%2C%20Japan!5e0!3m2!1sen!2sca!4v1600343423785!5m2!1sen!2sca" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </section>
+            <section class="store-location">
+                <h4>Chak<span>Tehran</span></h4>
+                <dl>
+                    <dt>Address</dt>
+                    <dd>District 00, Tehran, Tehran Province, Iran</dd>
+                    <dt>Phone</dt>
+                    <dd>21 0000 0000</dd>
+                    <dt>Open Hours</dt>
+                    <dd>1 PM to 9 PM Tue-Sun<br>Monday Closed</dd>
+                </dl>
+                <div class="gmap">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d414743.78018131235!2d51.06893663516654!3d35.69704557040082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8e00491ff3dcd9%3A0xf0b3697c567024bc!2sTehran%2C%20Tehran%20Province%2C%20Iran!5e0!3m2!1sen!2sca!4v1600343603941!5m2!1sen!2sca" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer-wrapper container-fluid" style="background-color: rgb(53, 48, 45);">
+      <div class="footer-wrapper1">
+        <p style="font-size: 14px">
+          <b style="font-size: 13px; font-weight: 700;" >Location:</b></br>
+            AA street, Vancouver, BC CANADA 1A2 B3C</br>
+            <b style="font-size: 13px; font-weight: 700;">Open Hours:</b></br>
+            11:30 PM to 9 PM Tue-Sun Monday Closed</br>
+            <b style="font-size: 13px; font-weight: 700;">Contact:</b></br>
+            info@chacpersian.com</br>
+            604 000 0000
+        </p>
+      </div>
+      <div class="footer-wrapper2">
+        <div class="footer-text2">
+          <div class="footer-logo">
+            <img src="images/logo/logo-nav.png" alt="">
+          </div>
+          <div class="footer-sns">
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-facebook-square"></i>
+          </div>
+          <div class="footer-text2">
+            <p  style="font-size: 13px;">copy right &copy; 2020 Chak persian.</p>
+            <img src="" alt="">
+          </div>
+        </div>
+      </div>
+</footer>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
