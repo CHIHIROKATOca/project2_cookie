@@ -1,4 +1,5 @@
 onload = function(){
+
     //split data from cookie
     const cookieInfo = document.cookie;
     const cookieArray = cookieInfo.split(';');
